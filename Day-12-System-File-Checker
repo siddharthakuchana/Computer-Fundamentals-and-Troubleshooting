@@ -1,0 +1,318 @@
+# Class 12: System File Checker (SFC) — Repairing Windows System Files
+
+## Learning Objectives
+
+By the end of this class, you should understand:
+
+- What system files are
+- What SFC (System File Checker) does
+- How to scan Windows for corrupted files
+- How to repair system files safely
+
+---
+
+# What Are System Files?
+
+System files are critical files used by Windows to operate correctly.
+
+Examples:
+
+- Windows boot files
+- Core operating system files
+- Driver-related files
+- Security-related files
+
+If these files become corrupted, Windows may experience problems.
+
+---
+
+# What Is SFC?
+
+**SFC (System File Checker)** is a built-in Windows tool that scans protected Windows system files and repairs corruption when possible.
+
+```text
+Windows
+↓
+SFC Scan
+↓
+Find Problems
+↓
+Repair Problems
+```
+
+---
+
+# Real-Life Analogy
+
+```text
+Doctor
+↓
+Checks Patient
+↓
+Finds Problems
+↓
+Provides Treatment
+
+SFC
+↓
+Checks Windows
+↓
+Finds Corruption
+↓
+Repairs Files
+```
+
+---
+
+# Symptoms of Corrupted System Files
+
+Common signs include:
+
+- Random crashes
+- Missing Windows features
+- Error messages
+- Windows tools not opening
+- Unusual behavior
+- System instability
+
+---
+
+# How to Run SFC
+
+## Step 1
+
+Open:
+
+```text
+Command Prompt (Administrator)
+```
+
+## Step 2
+
+Run:
+
+```text
+sfc /scannow
+```
+
+## Step 3
+
+Wait for the scan to complete.
+
+The process may take several minutes.
+
+---
+
+# Possible SFC Results
+
+## No Problems Found
+
+```text
+Windows Resource Protection did not find any integrity violations.
+```
+
+Meaning:
+
+```text
+System Files Healthy
+```
+
+---
+
+## Problems Found and Repaired
+
+```text
+Windows Resource Protection found corrupt files and successfully repaired them.
+```
+
+Meaning:
+
+```text
+Corruption Found
+↓
+Successfully Fixed
+```
+
+---
+
+## Problems Found but Not Repaired
+
+```text
+Windows Resource Protection found corrupt files but was unable to fix some of them.
+```
+
+Meaning:
+
+```text
+Further Troubleshooting Required
+```
+
+---
+
+# Why SFC Is Useful
+
+Instead of reinstalling Windows immediately:
+
+```text
+Problem Appears
+↓
+Run SFC
+↓
+Repair Corrupted Files
+↓
+Test Again
+```
+
+This often saves time and effort.
+
+---
+
+# Professor's Gold Rule #13
+
+> When Windows acts strangely, check system files before reinstalling Windows.
+
+---
+
+# Quiz
+
+## Q1
+
+What does SFC stand for?
+
+A. System File Checker
+
+B. System Folder Cleaner
+
+C. Security File Controller
+
+### Answer
+
+**A. System File Checker**
+
+---
+
+## Q2
+
+What command runs an SFC scan?
+
+A. chkdsk
+
+B. sfc /scannow
+
+C. taskmgr
+
+### Answer
+
+**B. sfc /scannow**
+
+---
+
+## Q3
+
+What does SFC primarily check?
+
+A. Photos
+
+B. System Files
+
+C. Music Files
+
+### Answer
+
+**B. System Files**
+
+---
+
+## Q4
+
+If SFC finds and repairs files, that is usually:
+
+A. Good
+
+B. Bad
+
+C. Irrelevant
+
+### Answer
+
+**A. Good**
+
+---
+
+# Your Quiz Results
+
+```text
+Q1 = A ✅
+Q2 = B ✅
+Q3 = B ✅
+Q4 = B ❌
+```
+
+Score:
+
+```text
+3 / 4
+```
+
+---
+
+# Practical Exercise
+
+Status:
+
+```text
+Pending
+```
+
+Run:
+
+```text
+sfc /scannow
+```
+
+Then check whether:
+
+- Integrity violations were found
+- Files were repaired
+
+---
+
+# Key Takeaways
+
+- SFC stands for System File Checker.
+- It scans protected Windows system files.
+- It can repair corrupted system files.
+- SFC is a useful troubleshooting tool.
+- Run SFC before considering a Windows reinstall.
+
+---
+
+# Professor's Rules Learned So Far
+
+1. What was the last thing that worked?
+2. Check Task Manager before guessing.
+3. The component closest to 100% is often the bottleneck.
+4. Check which process uses resources before closing apps.
+5. Slow storage can make a good PC feel slow.
+6. RAM above 90% often causes slowdowns.
+7. If CPU usage stays near 100%, find the responsible process first.
+8. Fewer unnecessary startup programs improve startup speed.
+9. Never disable a Windows service unless you understand what it does.
+10. When a problem repeats, check the logs instead of guessing.
+11. If hardware stops working, check Device Manager before replacing the hardware.
+12. Use Reliability Monitor to find recurring problems.
+13. When Windows acts strangely, check system files before reinstalling Windows.
+
+---
+
+# Class 12 Status
+
+✅ Theory Passed
+
+```text
+Quiz Score: 3 / 4
+```
+
+```text
+Practical Exercise: Pending
+```
