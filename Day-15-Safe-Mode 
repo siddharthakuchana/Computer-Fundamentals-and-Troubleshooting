@@ -1,0 +1,307 @@
+# Class 15: Safe Mode — Troubleshooting Windows with Minimal Drivers
+
+## Learning Objectives
+
+By the end of this class, you should understand:
+
+- What Safe Mode is
+- Why Safe Mode is useful
+- What loads in Safe Mode
+- What does not load in Safe Mode
+- When to use Safe Mode for troubleshooting
+
+---
+
+# What is Safe Mode?
+
+**Safe Mode** is a special Windows startup mode that loads only the essential components needed to run Windows.
+
+Normal Windows:
+
+```text
+Windows
++ Drivers
++ Startup Apps
++ Third-Party Services
+```
+
+Safe Mode:
+
+```text
+Windows
++ Essential Drivers
++ Essential Services
+```
+
+---
+
+# Why Use Safe Mode?
+
+Safe Mode helps determine whether a problem is caused by:
+
+- Drivers
+- Startup applications
+- Third-party services
+- Software conflicts
+
+If the problem disappears in Safe Mode, the cause is often not Windows itself.
+
+---
+
+# Real-Life Analogy
+
+Imagine a car with many accessories installed:
+
+```text
+Car Problem
+↓
+Remove Extra Accessories
+↓
+Test Basic Car
+```
+
+Safe Mode works similarly:
+
+```text
+Windows Problem
+↓
+Load Only Essentials
+↓
+Test Basic Windows
+```
+
+---
+
+# What Loads in Safe Mode?
+
+Safe Mode usually loads:
+
+✅ Essential Windows services
+
+✅ Basic drivers
+
+✅ Keyboard support
+
+✅ Mouse support
+
+✅ Basic display driver
+
+---
+
+# What Usually Does NOT Load?
+
+Safe Mode usually avoids loading:
+
+❌ Most startup programs
+
+❌ Many third-party drivers
+
+❌ Extra background services
+
+❌ Optional software components
+
+---
+
+# Why Is Safe Mode Useful?
+
+Example:
+
+```text
+Normal Windows
+↓
+System Freezes
+```
+
+But:
+
+```text
+Safe Mode
+↓
+No Freezes
+```
+
+This suggests:
+
+```text
+Driver Problem
+or
+Software Conflict
+```
+
+rather than a core Windows problem.
+
+---
+
+# How to Enter Safe Mode
+
+## Method 1
+
+Hold:
+
+```text
+Shift
+```
+
+While clicking:
+
+```text
+Restart
+```
+
+Then follow:
+
+```text
+Troubleshoot
+↓
+Advanced Options
+↓
+Startup Settings
+↓
+Restart
+↓
+Press 4
+```
+
+---
+
+# Common Uses of Safe Mode
+
+Use Safe Mode when:
+
+- Windows crashes frequently
+- Startup problems occur
+- Drivers cause issues
+- Malware removal is needed
+- Software conflicts are suspected
+
+---
+
+# Professor's Gold Rule #16
+
+> If a problem disappears in Safe Mode, a driver, startup app, or third-party service is often responsible.
+
+---
+
+# Quiz
+
+## Q1
+
+What is Safe Mode?
+
+A. A minimal Windows startup mode
+
+B. A web browser
+
+C. A game
+
+### Answer
+
+**A. A minimal Windows startup mode**
+
+---
+
+## Q2
+
+Safe Mode loads:
+
+A. Every application
+
+B. Essential drivers and services
+
+C. All startup programs
+
+### Answer
+
+**B. Essential drivers and services**
+
+---
+
+## Q3
+
+If a problem disappears in Safe Mode, the cause may be:
+
+A. Driver or software conflict
+
+B. Monitor color
+
+C. Wallpaper
+
+### Answer
+
+**A. Driver or software conflict**
+
+---
+
+## Q4
+
+Which key is commonly held while selecting Restart to access recovery options?
+
+A. Ctrl
+
+B. Alt
+
+C. Shift
+
+### Answer
+
+**C. Shift**
+
+---
+
+# Your Quiz Results
+
+```text
+Q1 = A ✅
+Q2 = B ✅
+Q3 = A ✅
+Q4 = C ✅
+```
+
+Score:
+
+```text
+4 / 4
+```
+
+---
+
+# Key Takeaways
+
+- Safe Mode starts Windows with only essential components.
+- It helps diagnose driver and software problems.
+- Most startup applications do not load.
+- If a problem disappears in Safe Mode, a third-party component is often responsible.
+- Safe Mode is a valuable troubleshooting tool.
+
+---
+
+# Professor's Rules Learned So Far
+
+1. What was the last thing that worked?
+2. Check Task Manager before guessing.
+3. The component closest to 100% is often the bottleneck.
+4. Check which process uses resources before closing apps.
+5. Slow storage can make a good PC feel slow.
+6. RAM above 90% often causes slowdowns.
+7. If CPU usage stays near 100%, find the responsible process first.
+8. Fewer unnecessary startup programs improve startup speed.
+9. Never disable a Windows service unless you understand what it does.
+10. When a problem repeats, check the logs instead of guessing.
+11. If hardware stops working, check Device Manager before replacing the hardware.
+12. Use Reliability Monitor to find recurring problems.
+13. When Windows acts strangely, check system files before reinstalling Windows.
+14. If files or folders behave strangely, check the disk before blaming Windows.
+15. If SFC cannot repair Windows, run DISM before considering a reinstall.
+16. If a problem disappears in Safe Mode, a driver, startup app, or third-party service is often responsible.
+
+---
+
+# Class 15 Status
+
+✅ Quiz Passed
+
+```text
+Quiz Score: 4 / 4
+```
+
+🏆 Passed with Full Marks
